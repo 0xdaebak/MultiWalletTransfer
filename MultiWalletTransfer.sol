@@ -17,7 +17,11 @@ contract MultiWalletTransfer{
       balance = balance - amounts[i];
       require(sent == true, "failed to transfer");
     }
-    require(balance == 0,"balance remaining");
+    if(balance > 0){
+     (bool sent,) = (msg.sender).call{value: balance}("");
+     require(sent == true,"problem transferring remaining balance");
+    }
+   
  }
 
 
