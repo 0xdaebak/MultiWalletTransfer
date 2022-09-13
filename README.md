@@ -10,10 +10,13 @@ It is a smart contract on bsc. You can transfer your wallet balance to multiple 
 ## Example
 
  ![Example](https://i.postimg.cc/dVLMrCqD/example.png)
+ 
+ 
+## Points To Remember
 
-## Badges
+- If you are sending 1 bnb amount to 5 wallets then make sure to use value (client side)/msg.value as 1 bnb. And transfer all those to wallets because if you transfer lets say 0.9 bnb to 5 wallets and 0.1 bnb remains then transaction will revert.
+- Always use staticcall first to check if your transaction works or not
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Warning
 
@@ -24,3 +27,8 @@ I've tried with wbnb balance and it is working smoothly. But I've not tried with
 
 - [@0xdaebak](https://www.github.com/0xdaebak)
 
+
+
+## Badges
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
