@@ -12,6 +12,20 @@ It is a smart contract on bsc. You can transfer your wallet balance to multiple 
  ![Example](https://i.postimg.cc/JhGGY8XK/example1.png)
  
  
+## Standard Information
+
+```javascript
+
+WALLET1 -> AMOUNT1 
+WALLET2 -> AMOUNT2 
+WALLET3 -> AMOUNT3 
+....... -> .......
+
+_.transferToWallets([WALLET1, WALLET2, WALLET3,.....], [AMOUNT1,AMOUNT2,AMOUNT3,...], {
+        value: TOTALAMOUNT
+});
+```
+ 
 ## Points To Remember
 
 - Contract does not recieve or store any tokens.
