@@ -14,7 +14,8 @@ It is a smart contract on bsc. You can transfer your wallet balance to multiple 
  
 ## Points To Remember
 
-- If you are sending 1 bnb amount to 5 wallets then make sure to use value (client side)/msg.value as 1 bnb. And transfer all those to wallets because if you transfer lets say 0.9 bnb to 5 wallets and 0.1 bnb remains then transaction will revert.
+- If you are sending 1 bnb as total amount and distributing this amount to 5 wallets then make sure to use value (client side)/msg.value as 1 bnb. And transfer everything to wallets because if you transfer lets say total of 0.9 bnb to 5 wallets and 0.1 bnb remains then transaction will revert.
+- Contract does not recieve or store any tokens.
 - Always use staticcall first to check if your transaction works or not
 
 
